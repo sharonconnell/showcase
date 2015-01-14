@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
   root 'welcome#about'
   get 'welcome/index'
-
   get 'welcome/about'
 
   # The priority is based upon order of creation: first created -> highest priority.
