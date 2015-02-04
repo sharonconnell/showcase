@@ -1,0 +1,10 @@
+</br>
+
+<h2><%= @work.title %></h2> 
+
+<h4><%= @work.description %></h4> 
+
+<div class="btn-group">
+  <%= link_to 'Edit', edit_work_path(@work), class: "btn btn-default" %> 
+  <%= link_to 'Back', work_path, class: "btn btn-default" %>
+</div>

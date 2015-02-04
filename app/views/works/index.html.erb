@@ -1,0 +1,25 @@
+</br>
+
+<h1>Works / Portfolio</h1>
+
+  <div class="row">
+    <% @works.each do |work| %>
+      <div class="col-md-4">
+       <div class="panel panel-default">
+        <div class="panel-body">
+         <h2><%= work.title %></h2>
+         <h4><%= work.description %></h4>
+         
+       
+         <div class="btn-group">
+          <%= link_to 'Show', work, class: "btn btn-default" %>
+          <%= link_to 'Edit', edit_work_path(work), class: "btn btn-default" %>
+          <%= link_to 'Destroy', work, method: :delete, data: { confirm: 'Are you really, really sure?' }, class: "btn btn-default" %>
+         </div>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+
+<%= link_to 'New Work', new_work_path, class: "btn btn-primary" %>

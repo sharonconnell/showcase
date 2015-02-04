@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
+  resources :works
+
   root 'welcome#index'
-  get 'welcome/index'
-  get 'welcome/about'
-  get 'welcome/contact'
-  get 'welcome/map'
+  get 'about' => 'welcome#about'
+  get 'contact' => 'welcome#contact'
+  get 'map' => 'welcome#map'
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
