@@ -8,7 +8,7 @@ class WelcomeController < ApplicationController
   def contact
   end
 
-  def work
+  def works
   end
 
   def map
