@@ -8,8 +8,8 @@ class WelcomeController < ApplicationController
   def contact
   end
 
-  def works
-  end
+  # def works
+  # end
 
   def map
   end
