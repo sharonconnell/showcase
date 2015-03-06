@@ -13,4 +13,7 @@ class WelcomeController < ApplicationController
 
   def map
   end
+
+  def sections
+  end
 end

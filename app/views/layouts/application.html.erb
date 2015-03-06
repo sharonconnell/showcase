@@ -13,8 +13,12 @@
  
   <style>
     body {
-        background: url(<%= asset_path "winter_trees_sky.jpg" %>) no-repeat;
+        background: url(<%= asset_path "winter_trees_sky.jpg" %>) 
+        no-repeat;
         background-size: cover;
+        opacity: 0.9;
+
+
     }  
     .container {
         background: rgba(255,255,255,0.8);
@@ -24,13 +28,14 @@
   </style>
 </head>
 <body>
-<ul class="nav navbar-nav">
+<ul class="nav nav-pills" >
   <li class="active">
 
     <%= link_to 'Home', '/' %></li>
     <li><%= link_to 'About', about_path %></li>
     <li><%= link_to 'Contact', contact_path %></li> 
-    <li><%= link_to 'Work', works_path %></li> 
+    <li><%= link_to 'Portfolio', works_path %></li> 
+    <li><%= link_to 'Sections', sections_path %></li>
 </ul>
 <br/>
   <div class="container">

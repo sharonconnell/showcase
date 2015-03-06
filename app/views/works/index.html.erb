@@ -1,6 +1,6 @@
 </br>
 
-<h1>Work / Portfolio</h1>
+<h1>Portfolio</h1>
 
   <div class="row">
     <% @works.each do |work| %>
@@ -9,8 +9,9 @@
         <div class="panel-body">
          <h2><%= work.title %></h2>
          <h4><%= work.description %></h4>
-         
-       
+         <h4><a href="<%= work.site_url %>" target="_blank">Live Site</a></h4>
+         <h4><a href="<%= work.github_url %>" target="_blank">GitHub</a></h4>
+         <a> </a>
          <div class="btn-group">
           <%= link_to 'Show', work, class: "btn btn-default" %>
           <%= link_to 'Edit', edit_work_path(work), class: "btn btn-default" %>
