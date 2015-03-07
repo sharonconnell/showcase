@@ -1,4 +1,13 @@
 
-<%= link_to image_tag('appalachian_trail_profilelarge.gif', align: 'center', width: '100%', height: 'auto', alt: 'GA AT Map'), title: 'GA AT Map' %>
+<style>
+.img-map {
+    border: 0px solid;
+        border-bottom-left-radius: 0em;
+        border-bottom-right-radius: 0em;
+        border-top-left-radius: 0em;
+        border-top-right-radius: 0em;
+        box-shadow: 0px 0px 0px #999999;
+}
+</style>
 
-<img src="<%=image_path('appalachian_trail_profilelarge.gif')%>" alt="Profile Photo" style="width:304px;height:228px"><p>
+<img class="img-map" src="<%=image_path('appalachian_trail_profilelarge.gif')%>" alt="GA Appalachian Trail Map" style="width:100%;height:auto;position">
